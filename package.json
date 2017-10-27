@@ -51,12 +51,15 @@
     ]
   },
   "build": {
-    "asar": false,
     "appId": "com.wulkano.kap",
     "files": [
       "**/*",
       "dist",
       "!src"
+    ],
+    "asarUnpack": [
+      "vendor/ffmpeg",
+      "node_modules/aperture/swift/main"
     ],
     "mac": {
       "category": "public.app-category.productivity"
